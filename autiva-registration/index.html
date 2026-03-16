@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind via CDN (no PostCSS build) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            boxShadow: {
+              soft: "0 10px 30px rgba(2, 6, 23, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Autiva Tech Internship</title>
+    <link rel="icon" type="image/png" href="/Logo.png" />
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
